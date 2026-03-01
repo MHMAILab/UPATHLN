@@ -41,9 +41,3 @@ python infer_wsi.py \
 
 - `mask_resize`: Key parameter controlling inference granularity. Set to 1 for fine-grained inference; larger values result in coarser granularity. Setting it to 6 achieves an optimal balance between high accuracy and reduced computational complexity.
 - `batch_size`: It is recommended to adjust based on your GPU VRAM. Increasing `batch_size` can help reduce inference time if ample memory is available.
-
-# UPATHLN
-# UPATHLN
-# UPATHLN
-# UPATHLN
-# UPATHLN
