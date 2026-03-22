@@ -1,5 +1,7 @@
 # High-Sensitivity Pan-Cancer AI Assessment of Lymph Node Metastasis via Uncertainty Quantification
 
+[Link to paper](https://www.nature.com/articles/s41746-026-02564-y)
+
 This repository contains the official implementation of **UPATHLN**, a novel deep learning framework proposed in our paper. UPATHLN is an AI system specifically designed for predicting lymph node metastasis tumors in Whole Slide Images (WSIs), while simultaneously providing uncertainty estimations for its predictions. It features an automated pipeline that generates tumor prediction heatmaps, uncertainty maps, and extracts structured quantitative results for high-sensitivity assessment.
 
 ## Environment Requirements
@@ -41,3 +43,18 @@ python infer_wsi.py \
 
 - `mask_resize`: Key parameter controlling inference granularity. Set to 1 for fine-grained inference; larger values result in coarser granularity. Setting it to 6 achieves an optimal balance between high accuracy and reduced computational complexity.
 - `batch_size`: It is recommended to adjust based on your GPU VRAM. Increasing `batch_size` can help reduce inference time if ample memory is available.
+
+
+## Citation
+
+```bibtex
+@article{wang2026highsensitivity,
+  title   = {High-sensitivity pan-cancer {AI} assessment of lymph node metastasis via uncertainty quantification},
+  author  = {Wang, Xiaodong and Chen, Ying and Liu, Xiaohong and Qiu, Cen and Tang, Hong and Huang, Tinggui and Guo, Siqi and Ma, Sainan and Cai, Mengjiao and Sun, Qingyun and Chang, Zichen and Liu, Jinge and Wang, Xiongjun and Li, Jinda and Qian, Wulei and Wang, Biyu and Zhang, Boan and Bai, Chenguang and Shi, Min and Zhang, Xinlei and Li, Meng and Wang, Jiahai and Wang, Bin and Ma, Jinlu and Ai, Lirong and Yu, Shaoqing and Wang, Liming and Feng, Ninghan and Liu, Xiyang and Yu, Guanzhen},
+  journal = {npj Digital Medicine},
+  year    = {2026},
+  month   = mar,
+  doi     = {10.1038/s41746-026-02564-y},
+  url     = {https://doi.org/10.1038/s41746-026-02564-y},
+  note    = {Published online 2026-03-21}
+}
